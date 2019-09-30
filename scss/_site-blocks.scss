@@ -14,7 +14,8 @@
 	background-size: 120% 200%;
 	background-repeat: no-repeat;
 	background-position: top;
-	// background-position: top right;
+    // background-position: top right;
+    overflow-x: hidden;
 	position: relative;
 	&:after {
 		position: absolute;

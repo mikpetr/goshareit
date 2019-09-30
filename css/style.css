@@ -664,6 +664,7 @@ h1, h2, h3, h4, h5,
   background-size: 120% 200%;
   background-repeat: no-repeat;
   background-position: top;
+  overflow-x: hidden;
   position: relative;
 }
 .site-blocks-cover:after {
