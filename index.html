@@ -29,7 +29,7 @@
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
   
-  <div class="site-wrap"  id="home-section">
+  <div class="site-wrap"  id="home">
 
     <div class="site-mobile-menu site-navbar-target">
       <div class="site-mobile-menu-header">
@@ -56,16 +56,17 @@
             <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0"><img src="./images/full-logo-png.png"></a></h1>
           </div>
 
-          <div class="col-12 col-md-10 main-menu">
-            <nav class="site-navigation position-relative text-right" role="navigation">
+          <div class="col-12 col-md-12 main-menu">
+            <nav class="site-navigation position-relative text-center" role="navigation">
 
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                <li><a href="#home-section" class="nav-link">Home</a></li>
-                <li><a href="#places-section" class="nav-link">Places</a></li>
-                <li><a href="#joined-people-section" class="nav-link">Joined People</a></li>
-                <li><a href="#pricing-section" class="nav-link">Pricing</a></li>
-                <li><a href="#about-section" class="nav-link">About Us</a></li>
-                <li><a href="#contact-section" class="nav-link">Contact</a></li>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#add-place" class="nav-link">Add Your Place</a></li>
+                <li><a href="#places" class="nav-link">Places</a></li>
+                <!-- <li><a href="#joined-people-section" class="nav-link">Joined People</a></li> -->
+                <!-- <li><a href="#pricing-section" class="nav-link">Pricing</a></li> -->
+                <!-- <li><a href="#about" class="nav-link">About Us</a></li> -->
+                <!-- <li><a href="#contact-section" class="nav-link">Contact</a></li> -->
               </ul>
             </nav>
           </div>
@@ -89,10 +90,10 @@
 
             <div class="row mb-4">
               <div class="col-lg-4 mr-auto">
-                <h1>Find Your Own Office Space</h1>
-                <p class="mb-5">We help individual contributors and freelancers to find shared office space for long term. Select a place from where you want to work and get started!</p>
+                <h1>Have a free space? Share it!</h1>
+                <p class="mb-5">We help companies to share their office space to other individuals and freelancers</p>
                 <div>
-                  <a href="#" class="btn btn-primary mr-2 mb-2">Get Started</a>
+                  <a href="#add-place" class="btn btn-primary mr-2 mb-2">Get Started</a>
                 </div>
               </div>
               
@@ -102,14 +103,73 @@
           </div>
         </div>
       </div>
-    </div>  
+    </div>
 
-    <!-- PLACES -->
-    <div class="site-section bg-light" id="places-section">
+    <!-- ADD YOUR PLACE -->
+    <div class="site-section bg-light" id="add-place">
         <div class="container">
             <div class="row mb-5">
                 <div class="col-12 text-center">
-                <h2 class="section-title mb-3">Places</h2>
+                    <h2 class="section-title mb-3">Add Your Place</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+            <div class="col-lg-7 mb-5">
+    
+                <form action="#" class="p-5 bg-white">
+                
+                <h2 class="h5 text-black mb-5">Fill you contact details and we will contact you</h2> 
+                <!-- <p class="text-black"></p> -->
+    
+                <div class="row form-group">
+                    <div class="col-md-12">
+                        <label class="text-black" for="add-place-contact-name">Contact Name *</label> 
+                        <input type="text" id="add-place-contact-name" class="form-control rounded-0">
+                    </div>
+                </div>
+
+                <div class="row form-group">
+                    <div class="col-md-12">
+                        <label class="text-black" for="add-place-phone-number">Phone number *</label> 
+                        <input type="text" id="add-place-phone-number" class="form-control rounded-0">
+                    </div>
+                </div>
+
+                <div class="row form-group">
+                    <div class="col-md-12">
+                        <label class="text-black" for="add-place-company-name">Company Name</label> 
+                        <input type="text" id="add-place-company-name" class="form-control rounded-0">
+                    </div>
+                </div>
+    
+                <!-- <div class="row form-group">
+                    <div class="col-md-12">
+                    <label class="text-black" for="message">Message</label> 
+                    <textarea name="message" id="message" cols="30" rows="7" class="form-control rounded-0" placeholder="Write your notes or questions here..."></textarea>
+                    </div>
+                </div> -->
+    
+                <div class="row form-group">
+                    <div class="col-md-12">
+                    <input type="submit" value="Contact me" class="btn btn-primary mr-2 mb-2">
+                    </div>
+                </div>
+    
+    
+                </form>
+            </div>
+            
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- PLACES -->
+    <div class="site-section bg-light" id="places">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                <h2 class="section-title mb-3">Places already joined</h2>
                 </div>
             </div>
     
@@ -147,7 +207,7 @@
     </div>
 
     <!-- JOINED PEOPLE -->
-    <div class="site-section testimonial-wrap" id="joined-people-section">
+    <!-- <div class="site-section testimonial-wrap" id="joined-people-section">
         <div class="container">
           <div class="row mb-5">
             <div class="col-12 text-center">
@@ -214,10 +274,10 @@
             </div>
   
         </div>
-    </div>
+    </div> -->
 
     <!-- PRICING -->
-    <div class="site-section bg-light" id="pricing-section">
+    <!-- <div class="site-section bg-light" id="pricing-section">
         <div class="container">
             <div class="row mb-5">
                 <div class="col-12 text-center">
@@ -263,55 +323,16 @@
                             <p><a href="#">Learn More</a></p>
                         </div>
                     </div>
-
-                    <!-- <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
-                    <div class="unit-4 d-block">
-                    <div class="unit-4-icon mb-3">
-                        <span class="icon-wrap"><span class="text-primary icon-settings_backup_restore"></span></span>
-                    </div>
-                    <div>
-                        <h3>Insurance Consulting</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                        <p><a href="#">Learn More</a></p>
-                    </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
-                    <div class="unit-4 d-block">
-                    <div class="unit-4-icon mb-3">
-                        <span class="icon-wrap"><span class="text-primary icon-sentiment_satisfied"></span></span>
-                    </div>
-                    <div>
-                        <h3>Customer Satistified</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                        <p><a href="#">Learn More</a></p>
-                    </div>
-                    </div>
-
-                    
-                </div>
                 
-                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
-                    <div class="unit-4 d-block">
-                    <div class="unit-4-icon mb-3">
-                        <span class="icon-wrap"><span class="text-primary icon-power"></span></span>
-                    </div>
-                    <div>
-                        <h3>Plug &amp; Play</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                        <p><a href="#">Learn More</a></p>
-                    </div>
-                    </div>
-                </div> -->
                 </div>
     
             </div>
         </div>
-    </div>
+    </div> -->
+
 
     <!-- ABOUT US -->
-    <div class="site-section bg-light" id="about-section">
+    <!-- <div class="site-section bg-light" id="about">
       <div class="container">
         <div class="row mb-5">
           <div class="col-12 text-center">
@@ -330,10 +351,12 @@
         </div>
         
       </div>
-    </div>
+    </div> -->
+
+    
 
     <!-- CONTACT -->
-    <div class="site-section bg-light" id="contact-section">
+    <!-- <div class="site-section bg-light" id="contact-section">
       <div class="container">
         <div class="row mb-5">
           <div class="col-12 text-center">
@@ -342,8 +365,6 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-lg-7 mb-5">
-
-            
 
             <form action="#" class="p-5 bg-white">
               
@@ -396,7 +417,7 @@
         </div>
         
       </div>
-    </div>
+    </div> -->
 
     <!-- FOOTER -->
     <div class="footer py-5 border-top text-center">
@@ -406,7 +427,7 @@
             <p class="mb-0">
               <a href="#" class="p-3"><span class="icon-facebook"></span></a>
               <!-- <a href="#" class="p-3"><span class="icon-twitter"></span></a> -->
-              <a href="#" class="p-3"><span class="icon-instagram"></span></a>
+              <!-- <a href="#" class="p-3"><span class="icon-instagram"></span></a> -->
             </p>
           </div>
         </div>
@@ -444,6 +465,7 @@
   <script src="js/main.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.1"></script>
   <script src="app/app.js"></script>
     
   </body>
